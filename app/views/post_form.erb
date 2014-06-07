@@ -1,12 +1,10 @@
-
-<form class="link_input" action="/listings" method="post">
-	<ul>
-		<li>Title: <input type="text" name="title"></li>
-		<li>Link URL: <input type="text" name="url"></li>
-		<li>Location: <input type="text" name="location"></li>
-		<li>Beds:<input type="text" name="bedrooms"></li>
-		<li>Baths:<input type="text" name="bathrooms"></li>
-		<li><input type="submit" value="Post Listing"></li>
-	</ul>
-</form>
-
+<div class="newlisting eight columns offset-by-four">
+  <form class="link_input" action="/listings" method="post">
+      <input type="text" name="title" placeholder="title here!">
+      <input type="text" name="url" placeholder="url here!">
+      <input type="text" name="bedrooms" placeholder="bedrooms here!">
+      <input type="text" name="bathrooms" placeholder="bathrooms here!">
+      <input type="text" name="location" placeholder="location here!">
+      <input type="submit" value="Post Listing">
+  </form>
+</div>
