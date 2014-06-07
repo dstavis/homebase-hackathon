@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Swag';
+  src: url('/fonts/KGALittleSwag.ttf');
+}
+.container #header h1 {
+  font-family: 'Swag';
+  color: #FF5831;
+  font-size: 10em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.newlisting {
+}
+
+.newlisting::after {
+
+}
+
+.listing {
+}
