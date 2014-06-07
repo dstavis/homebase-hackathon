@@ -10,12 +10,39 @@
   text-align: center;
 }
 
-.newlisting {
+.listing .votecounter {
+  background-color: #AFB9C1;
+  float:right;
+  border-top-left-radius:2em;
+  border-top-right-radius:2em;
+  padding: 0em 0.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
-.newlisting::after {
-
+.listing .innerlisting {
+  clear: both;
+  background-color: #AFB9C1;
 }
 
-.listing {
+.upvote {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-bottom: 2em solid #FF8264;
+}
+
+.downvote {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 2em solid #FF8264;
+}
+
+.listingcontents {
+  float:left;
 }
