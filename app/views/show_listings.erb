@@ -1,15 +1,37 @@
 <div class="listings eight columns offset-by-four">
   <h2>Show Listings:</h2>
 
-  <% all_listings %>
-  <% @listings.each do |listing| %>
+  <% listing = featured_listing %>
     <div class="listing">
       <div class="votecounter">
         <%= listing.vote_num %>
       </div>
       <div class="innerlisting">
         <div class="votes">
-          <div class="upvote"></div>
+     			<div class="upvote"></div>
+          <div class="downvote"></div>
+        </div>
+        <div class="listingcontents">
+          <h3><%= listing.title %></h3>
+          <table>
+            <tr><td>Bedrooms:</td><td><%= listing.bedrooms %></td></tr>
+            <tr><td>Bathrooms:</td><td><%= listing.bathrooms %></td></tr>
+            <tr><td>Location:</td><td><%= listing.location %></td></tr>
+            <tr><td>Link:</td><td><a href="<%= listing.url %>"><%= listing.url %></a></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  <% all_listings %>
+  <% @listings.reverse.each do |listing| %>
+    <div class="listing">
+      <div class="votecounter">
+        <%= listing.vote_num %>
+      </div>
+      <div class="innerlisting">
+        <div class="votes">
+     			<div class="upvote"></div>
           <div class="downvote"></div>
         </div>
         <div class="listingcontents">

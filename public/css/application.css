@@ -23,10 +23,8 @@
 .innerlisting {
   clear: both;
   background-color: #AFB9C1;
-}
+  margin-right: 0px !important;
 
-.votes {
-  width: 1em;
 }
 
 .upvote {
@@ -52,5 +50,8 @@
 }
 
 .listingcontents {
-  float: left;
+  margin-right: 0px !important;
+}
+h3 {
+  color: #233F55;
 }

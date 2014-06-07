@@ -12,8 +12,8 @@ post '/listings' do
 								 url: params[:url],
 								 location: params[:location],
 								 bedrooms: params[:bedrooms],
-								 bathrooms: params[:bathrooms],
-								 vote_num: params[:vote])
+								 bathrooms: params[:bathrooms]
+								 )
 	redirect '/'
 end
 
