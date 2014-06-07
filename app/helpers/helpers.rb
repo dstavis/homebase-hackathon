@@ -4,7 +4,7 @@ helpers do
   end
 
   def all_listings
-  	@listings = Listing.all.order(:id)
+  	@listings = Listing.all
   end
 
 end

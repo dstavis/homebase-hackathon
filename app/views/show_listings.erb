@@ -1,0 +1,7 @@
+<h1>Show Listings:</h1>
+<ul>
+	<% all_listings %>
+	<% @listings.each do |listing| %>
+		<li><%= listing.id %>: <%= listing.title %>: <%= listing.url %> </li>
+	<% end %>
+</ul>
