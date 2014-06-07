@@ -1,4 +1,4 @@
-homebase-hackathon
+homebase
 ==================
 
 Communal house-hunting
