@@ -18,6 +18,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'rest-client'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
