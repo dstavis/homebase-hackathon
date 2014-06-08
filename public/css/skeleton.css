@@ -69,7 +69,13 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
 
-
+      h1 {
+          font-family: 'Swag';
+          color: #FF5831;
+          font-size: 10em;
+          line-height: 1.5em;
+          text-align: center;
+        }
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -121,6 +127,14 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+        .container #header
+        h1 {
+          font-family: 'Swag';
+          color: #FF5831;
+          font-size: 8em;
+          line-height: 1.5em;
+          text-align: center;
+        }
     }
 
 
@@ -171,6 +185,14 @@
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
 
+        h1 {
+          font-family: 'Swag';
+          color: #FF5831;
+          font-size: 4em;
+          line-height: 1.5em;
+          text-align: center;
+        }
+
     }
 
 
@@ -203,6 +225,14 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
+
+        h1 {
+          font-family: 'Swag';
+          color: #FF5831;
+          font-size: 5em;
+          line-height: 1.5em;
+          text-align: center;
+        }
     }
 
 
