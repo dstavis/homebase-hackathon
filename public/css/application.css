@@ -8,6 +8,10 @@ body {
    font-size: 0.85em;
 }
 
+.post_form {
+  padding-top: 3.5em;
+}
+
 /*HEADER STYLES*/
 .container #header h1 {
   font-family: 'Swag';
@@ -26,6 +30,9 @@ body {
 .featured_listing, .listing {
   margin-bottom: 2em;
   padding: 0.5em;
+}
+.upvote, .downvote {
+  padding: 1.5em;
 }
 
 .subtitle {
@@ -62,28 +69,7 @@ td {
 .featured_listing .votes{
   float: left;
   margin-right: 2em;
-}
-
-.featured_listing .upvote {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-bottom: 2em solid #FFFFFF;
-  padding-top: 1em;
-  margin: 1em;
-}
-
-.featured_listing .downvote {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-top: 2em solid #FFFFFF;
-  margin: 1em;
-  padding-bottom: 1em;
+  padding-left: 2em;
 }
 
 .featured_listing .listingcontents {
@@ -95,6 +81,7 @@ td {
   color: #233F55;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bold;
+  text-shadow: 1px 1px #FFFFFF;
 }
 
 /*REGULAR LISTING STYLES*/
@@ -124,28 +111,7 @@ td {
 .listing .votes{
   float: left;
   margin-right: 2em;
-}
-
-.listing .upvote {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-bottom: 2em solid #FFFFFF;
-  padding-top: 1em;
-  margin: 1em;
-}
-
-.listing .downvote {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-top: 2em solid #FFFFFF;
-  margin: 1em;
-  padding-bottom: 1em;
+  padding-left: 2em;
 }
 
 .listing .listingcontents {
@@ -156,14 +122,15 @@ td {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bold;
   color: #A63419;
+  text-shadow: 1px 1px #FFFFFF;
 }
 
 /*FOOTER STYLES*/
 footer {
-  width: 100%;
   background-color: #233F55;
   color: #FFFFFF;
   text-align: center;
   padding: 1.5em;
   margin-top: 2em;
+  font-size: 1.5em;
 }
