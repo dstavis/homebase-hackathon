@@ -2,6 +2,7 @@
   <h2>Show Listings:</h2>
 
   <% listing = featured_listing %>
+  <% if listing %>
     <div class="listing">
       <div class="votecounter">
         <%= listing.vote_num %>
@@ -30,8 +31,10 @@
         </div>
       </div>
     </div>
+  <% end %>
 
   <% all_listings %>
+<% if @listings %>
   <% @listings.reverse.each do |listing| %>
     <div class="listing">
       <div class="votecounter">
@@ -62,4 +65,5 @@
       </div>
     </div>
   <% end %>
+<% end %>
 </div>
