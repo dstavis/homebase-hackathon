@@ -1,4 +1,4 @@
-module CraigslistAPI
+class CraigslistAPI
   def initialize
     @id = "craigslist_id"
     @key = "craigslist_key"
