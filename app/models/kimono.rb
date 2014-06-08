@@ -4,6 +4,7 @@ require 'JSON'
 class Kimono
 
   def self.get_data
+    binding.pry
     response = RestClient.get 'http://www.kimonolabs.com/api/ckbyl174?apikey=c4ef988e1794740430b4c3f674963022'
     response_hash = JSON.parse(response)
     listings = Kimono.populate_listings(response_hash)
@@ -14,7 +15,7 @@ private
 
   def self.populate_listings(response)
     listings = []
-    response.each do |listing|
+    @@response.each do |listing|
       listings.push({
         address: listing["address"],
         monthly_rent: listing["monthly_rent"],
@@ -24,22 +25,6 @@ private
     end
     return listings
   end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @@response = [{
     "monthly_rent" => "$5500",
