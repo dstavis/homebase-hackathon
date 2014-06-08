@@ -157,3 +157,13 @@ td {
   font-weight: bold;
   color: #A63419;
 }
+
+/*FOOTER STYLES*/
+footer {
+  width: 100%;
+  background-color: #233F55;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 2em;
+}
