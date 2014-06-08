@@ -3,8 +3,6 @@ require 'JSON'
 
 class Kimono
 
-  @@data = Kimono.get_data
-
   def self.get_data
     response = RestClient.get 'http://www.kimonolabs.com/api/ckbyl174?apikey=c4ef988e1794740430b4c3f674963022'
     response_hash = JSON.parse(response)
