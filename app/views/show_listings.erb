@@ -11,20 +11,21 @@
      			<div class="upvote"></div>
      			<form method="post" action="/listings/<%=listing.id%>">
      				<input type="hidden" name="upvote">
-						<input type="image" src="http://higoodbye.com/assets/img/icons/upvote-green-40.png" alt="Submit Form">
+						<input type="image" src="/images/uparrow.png" alt="Submit Form">
      			</form>
           <div class="downvote"></div>
           <form method="post" action="/listings/<%=listing.id%>">
      				<input type="hidden" name="downvote">
-						<input type="image" src="http://higoodbye.com/assets/img/icons/downvote-red-40.png" alt="Submit Form">
+						<input type="image" src="/images/downarrow.png" alt="Submit Form">
      			</form>
         </div>
         <div class="listingcontents">
           <h3><%= listing.title %></h3>
           <table>
+            <tr><td class="subtitle">Price:</td><td><%= listing.monthly_rent %></td></tr>
+            <tr><td class="subtitle">Address:</td><td><%= listing.address %></td></tr>
             <tr><td class="subtitle">Bedrooms:</td><td><%= listing.bedrooms %></td></tr>
             <tr><td class="subtitle">Bathrooms:</td><td><%= listing.bathrooms %></td></tr>
-            <tr><td class="subtitle">Location:</td><td><%= listing.location %></td></tr>
             <tr><td class="subtitle">Link:</td><td><a href="<%= listing.url %>"><%= listing.url %></a></td></tr>
           </table>
         </div>
@@ -44,20 +45,21 @@
      			<div class="upvote"></div>
      			<form method="post" action="/listings/<%=listing.id%>">
      				<input type="hidden" name="upvote">
-						<input type="image" src="http://higoodbye.com/assets/img/icons/upvote-green-40.png" alt="Submit Form">
+						<input type="image" src="/images/uparrow.png" alt="Submit Form">
      			</form>
           <div class="downvote"></div>
           <form method="post" action="/listings/<%=listing.id%>">
      				<input type="hidden" name="downvote">
-						<input type="image" src="http://higoodbye.com/assets/img/icons/downvote-red-40.png" alt="Submit Form">
+						<input type="image" src="/images/downarrow.png" alt="Submit Form">
      			</form>
         </div>
         <div class="listingcontents">
           <h3><%= listing.title %></h3>
           <table>
+            <tr><td class="subtitle">Price:</td><td><%= listing.monthly_rent %></td></tr>
+            <tr><td class="subtitle">Address:</td><td><%= listing.address %></td></tr>
             <tr><td class="subtitle">Bedrooms:</td><td><%= listing.bedrooms %></td></tr>
             <tr><td class="subtitle">Bathrooms:</td><td><%= listing.bathrooms %></td></tr>
-            <tr><td class="subtitle">Location:</td><td><%= listing.location %></td></tr>
             <tr><td class="subtitle">Link:</td><td><a href="<%= listing.url %>"><%= listing.url %></a></td></tr>
           </table>
         </div>

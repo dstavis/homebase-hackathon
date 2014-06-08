@@ -8,12 +8,11 @@ post '/' do
 end
 
 post '/listings' do
-	Listing.create(title: params[:title],
-								 url: params[:url],
-								 location: params[:location],
-								 bedrooms: params[:bedrooms],
-								 bathrooms: params[:bathrooms]
-								 )
+	listing = Listing.create(title: params[:title],
+		url: params[:url])
+	all_listings = Kimono.get_data
+	listing_data = all_listings[listing.id - 1]
+	listing.update_attributes(listing_data)
 	redirect '/'
 end
 

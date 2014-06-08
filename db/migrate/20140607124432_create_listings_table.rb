@@ -3,9 +3,10 @@ class CreateListingsTable < ActiveRecord::Migration
   	create_table :listings do |l|
   		l.string :title
   		l.string :url
-  		l.string :location
+  		l.string :address
   		l.string :bedrooms
   		l.string :bathrooms
+      l.string :monthly_rent
   		l.integer :vote_num, default: 0
   		l.timestamps 
   	end
