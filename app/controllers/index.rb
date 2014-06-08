@@ -17,6 +17,11 @@ post '/listings' do
 	redirect '/'
 end
 
-put '/listings/:id' do
-
+post '/listings/:id' do
+	listing = Listing.find(params[:id])
+	listing.vote_num += 1 if params[:upvote]
+	listing.vote_num -= 1 if params[:downvote]
+	listing.save
+	redirect '/'
 end
+
