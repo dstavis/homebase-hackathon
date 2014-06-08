@@ -113,6 +113,36 @@ __STRETCH__
 
 
 
+*******************************************
+UP/DOWN PSEUDO
+
+
+post '/listings/:id/update_vote_count' do
+	find :id
+	vote_num += 1
+	redirect '/'
+end
+
+
+
+order_by_chornilogical --> before listing_views.
+
+implement featured listing based on most votes -
+chronological there after
+
+find_by_vote.max
+list.each.inverse.????
+
+*******************************************
+Styling
+
+form on left 1/3
+listings on right 2/3's
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ class CreateListingsTable < ActiveRecord::Migration
   		l.string :location
   		l.string :bedrooms
   		l.string :bathrooms
-  		l.integer :vote_num
+  		l.integer :vote_num, default: 0
   		l.timestamps 
   	end
   end
