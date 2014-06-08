@@ -1,7 +1,14 @@
+/*GENERAL STYLES*/
 @font-face {
   font-family: 'Swag';
   src: url('/fonts/KGALittleSwag.ttf');
 }
+body {
+   font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size: 0.85em;
+}
+
+/*HEADER STYLES*/
 .container #header h1 {
   font-family: 'Swag';
   color: #FF5831;
@@ -10,24 +17,54 @@
   text-align: center;
 }
 
-.listing .votecounter {
-  background-color: #AFB9C1;
-  float:right;
-  border-top-left-radius:2em;
-  border-top-right-radius:2em;
-  padding: 0em 0.5em;
-  font-size: 1.5em;
-  line-height: 1.5em;
+/*FORM STYLES*/
+.newlisting {
+  width: 90%;
 }
 
-.innerlisting {
+/*GENERAL LISTING STYLES*/
+.featured_listing, .listing {
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+.subtitle {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+td {
+  padding: 1em;
+}
+
+/*FEATURED LISTING STYLES*/
+.featured_listing .votecounter {
+  background-color: #AFB9C1;
+  float:right;
+  border-top-left-radius:0.50em;
+  border-top-right-radius:0.50em;
+  padding: 0em 0.75em;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+.featured_listing .innerlisting {
   clear: both;
   background-color: #AFB9C1;
   margin-right: 0px !important;
-
+  border-top-left-radius:0.75em;
+  border-bottom-right-radius:0.75em;
+  border-bottom-left-radius:0.75em;
 }
 
-.upvote {
+.featured_listing .votes{
+  float: left;
+  margin-right: 2em;
+}
+
+.featured_listing .upvote {
   display: block;
   width: 0;
   height: 0;
@@ -38,7 +75,7 @@
   margin: 1em;
 }
 
-.downvote {
+.featured_listing .downvote {
   display: block;
   width: 0;
   height: 0;
@@ -49,9 +86,74 @@
   padding-bottom: 1em;
 }
 
-.listingcontents {
+.featured_listing .listingcontents {
   margin-right: 0px !important;
+  padding: 1em;
 }
-h3 {
+
+.featured_listing h3 {
   color: #233F55;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+}
+
+/*REGULAR LISTING STYLES*/
+.listing, .listing {
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+.listing .votecounter {
+  background-color: #FFB09D;
+  float:right;
+  border-top-left-radius:0.50em;
+  border-top-right-radius:0.50em;
+  padding: 0em 0.75em;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+.listing .innerlisting {
+  clear: both;
+  background-color: #FFB09D;
+  margin-right: 0px !important;
+  border-top-left-radius:0.75em;
+  border-bottom-right-radius:0.75em;
+  border-bottom-left-radius:0.75em;
+}
+
+.listing .votes{
+  float: left;
+  margin-right: 2em;
+}
+
+.listing .upvote {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-bottom: 2em solid #FFFFFF;
+  padding-top: 1em;
+  margin: 1em;
+}
+
+.listing .downvote {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 2em solid #FFFFFF;
+  margin: 1em;
+  padding-bottom: 1em;
+}
+
+.listing .listingcontents {
+  margin-right: 0px !important;
+  padding: 1em;
+}
+.listing h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: #A63419;
 }
