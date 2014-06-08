@@ -4,7 +4,6 @@ require 'JSON'
 class Kimono
 
   def self.get_data
-    binding.pry
     response = RestClient.get 'http://www.kimonolabs.com/api/ckbyl174?apikey=c4ef988e1794740430b4c3f674963022'
     response_hash = JSON.parse(response)
     listings = Kimono.populate_listings(response_hash)
