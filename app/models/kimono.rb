@@ -14,7 +14,7 @@ private
 
   def self.populate_listings(response)
     listings = []
-    @@response.each do |listing|
+    response.each do |listing|
       listings.push({
         address: listing["address"],
         monthly_rent: listing["monthly_rent"],
@@ -24,6 +24,22 @@ private
     end
     return listings
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @@response = [{
     "monthly_rent" => "$5500",
